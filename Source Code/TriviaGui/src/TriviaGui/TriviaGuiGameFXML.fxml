@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="gamePane" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: rgb(25,20,121);" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TriviaGui.TriviaGuiGameController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="371.0" layoutY="138.0" prefHeight="505.0" prefWidth="338.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="396.0" minHeight="0.0" prefHeight="158.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="304.0" minHeight="0.0" prefHeight="158.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="304.0" minHeight="10.0" prefHeight="158.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnStart" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnStartAction" prefHeight="86.0" prefWidth="283.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Start quiz" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.5666666666666667" endY="0.519047619047619" startX="0.5095238095238095" startY="0.44761904761904764">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.41381579637527466" green="0.3603801131248474" blue="0.8947368264198303" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5828582048416138" green="0.2839912176132202" blue="0.9736841917037964" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <Glow level="0.2" />
+               </effect>
+            </Button>
+            <Button fx:id="btnLogout" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnLogoutAction" prefHeight="86.0" prefWidth="283.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Log out" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.5666666666666667" endY="0.519047619047619" startX="0.5095238095238095" startY="0.44761904761904764">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.41381579637527466" green="0.3603801131248474" blue="0.8947368264198303" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5828582048416138" green="0.2839912176132202" blue="0.9736841917037964" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <Glow level="0.2" />
+               </effect>
+            </Button>
+            <Button fx:id="btnQuit" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnQuitAction" prefHeight="86.0" prefWidth="283.0" style="-fx-background-radius: 50; -fx-background-color: white;" text="Quit" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.5666666666666667" endY="0.519047619047619" startX="0.5095238095238095" startY="0.44761904761904764">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.41381579637527466" green="0.3603801131248474" blue="0.8947368264198303" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5828582048416138" green="0.2839912176132202" blue="0.9736841917037964" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <Glow level="0.2" />
+               </effect>
+            </Button>
+         </children>
+      </GridPane>
+      <Text layoutX="295.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRIVIA PROJECT" textAlignment="CENTER" wrappingWidth="490.34765625">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="48.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.5666666666666667" endY="0.519047619047619" startX="0.5095238095238095" startY="0.44761904761904764">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.41381579637527466" green="0.3603801131248474" blue="0.8947368264198303" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5828582048416138" green="0.2839912176132202" blue="0.9736841917037964" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fx:id="txtUsername" fill="WHITE" layoutX="14.0" layoutY="634.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="359.34765625">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtPoints" fill="WHITE" layoutX="14.0" layoutY="687.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Points:" wrappingWidth="359.34765625">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
